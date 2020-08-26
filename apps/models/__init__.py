@@ -5,3 +5,5 @@
 @file: __init__.py.py
 @time: 2020/8/24 16:11
 """
+from .users import User
+from .posts import Posts

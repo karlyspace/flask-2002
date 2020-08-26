@@ -11,9 +11,9 @@ from  .posts import posts
 
 # 蓝本的配置
 DEFAULT_BLUEPRINT=(
-        (main,''),
-        (users,'/users'),
-        (posts,'/posts'),
+	(main,''),
+    (users,'/users'),
+    (posts,'/posts'),
 )
 
 # 封装函数完成蓝本的注册

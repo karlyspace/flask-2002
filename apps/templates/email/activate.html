@@ -1,0 +1,16 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>hello {{ username }}</h1>
+<p>请点击以下链接完成激活</p>
+{#    https://mail.qq.com/users/activate/eyJhbGciOiJIUzUxMiIsImlhdCI6MTU5ODM0MDgxNSwiZXhwIjoxNTk4MzQ0NDE1fQ.eyJpZCI6Nn0.atiUoLRuUOXi3P2hmzfT20MhFIFcGj4MsxIhLJnR1F6pdkn2E7TpA_DX8R8SvC4h_3A9eHa3hw-JFPvVuVgLKg/#}
+{#    默认前面是 qq.com 163.com等  加上 _external=True以后 就变成我们自己的
+主机地址#}
+    <a href="{{ url_for('users.activate_user',token=token,_external=True) }}">点我激活</a>
+</body>
+</html>
